@@ -1,0 +1,74 @@
+package com.google.android.apps.gsa.shared.k;
+
+/* loaded from: classes-dex2jar.jar:com/google/android/apps/gsa/shared/k/en.class */
+public interface en {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final f f1445a = new f(1010, 3000);
+    public static final d b = new d(10123, false);
+    public static final d c = new d(194, false);
+    public static final d d = new d(45624463, false);
+    public static final h e = new h(444, ".*/sorry/Captcha.*,.*/sorry/IndexRedirect.*,.*/sorry/index.*");
+    public static final h f = new h(178, "qsb-android-asbl-pb");
+    public static final h g = new h(171, "www.google.com");
+    public static final h h = new h(667, "");
+    public static final h i = new h(174, "gs_pcr");
+    public static final h j = new h(175, "t");
+    public static final h k = new h(453, "");
+    public static final h l = new h(452, "");
+    public static final d m = new d(45633039, false);
+    public static final d n = new d(45386908, false);
+    public static final h o = new h(1274, "1599,246,250,248,1016,559,534,539,799,800,178,1074,1344,653,1385,969,1180,1408,340,338,337,98,339,493,964,967,987,985,122,1009,664,1100,1107,834,1108,861,862,1222,660,274,266,511,1149,1173,1131,586,386,1054,1440,1588,1589,817,1086,1085,1552,790,418,1610,1611,1575,1583,1595,1582,1616,1615,1614,1617,1618,261,260,1075,1399,502,823,1638,1634,1576,1600,1594,770,771,856,233,232,1381,1240,543,1390,1661,858,859,860,1160,656,837,839,1157,1400,1509,1625,1020,924,925,10,9,7,8,27,28,11,25,26,23,30,1196,1203,1214,1117,1037,1028,399,1420,1454,1457,1456,1455,1123,1353,1350,1257,1260,1626,146,67,958,311,147,772,847,846,848,34,976,1128,1384,1386,676,801,528,529,1378,1379,1126,886,1109,1112,548,547,486,19,279,278,277,427,428,513,512,465,464,463,187,186,199,198,672,761,507,508,514,1259,470");
+    public static final d p = new d(550, true);
+    public static final d q = new d(737, false);
+    public static final d r = new d(494, true);
+    public static final d s = new d(45408237, false);
+    public static final f t = new f(505, 100);
+    public static final h u = new h(8, "en-US,en-GB,en-001,en-AU,en-CA,en-IN,en-NZ,en-ZA,fr-BE,fr-CA,fr-FR,fr-CH,it-IT,it-CH,de-AT,de-DE,de-CH,de-LI,es-AR,es-BO,es-CL,es-CO,es-CR,es-CU,es-DO,es-EC,es-SV,es-GT,es-HN,es-MX,es-NI,es-PA,es-PY,es-PE,es-PR,es-ES,es-US,es-UY,es-VE,ja-JP,ko-KR,pt-BR,ru-BY,ru-RU,cs-CZ,da-DK,fi-FI,id-ID,in-ID,nl-BE,nl-NL,nb-NO,nn-NO,no-NO,pl-PL,sv-FI,sv-SE,th-TH,tr-TR,uk-UA,vi-VN,cmn-Hans-CN,cmn-Hant-TW,cmn-CN,cmn-TW,zh-CN,zh-TW");
+    public static final d v = new d(45624515, false);
+    public static final h w = new h(185, "%1$s://%2$s/complete/search");
+    public static final f x = new f(714, 500);
+    public static final f y = new f(123, 16384);
+    public static final h z = new h(927, "1125,1192");
+    public static final h A = new h(765, "Action");
+    public static final f B = new f(579, 4);
+    public static final f C = new f(137, 4194304);
+    public static final f D = new f(921, 3);
+    public static final f E = new f(606, 300);
+    public static final f F = new f(19, 24);
+    public static final f G = new f(18, 10);
+    public static final h H = new h(635, "en-US,en-GB,en-IN,en-AU,en-CA,es-ES,de-DE,fr-FR,it-IT");
+    public static final h I = new h(1007, "searchcard-pa.googleapis.com");
+    public static final f J = new f(466, -1);
+    public static final d K = new d(952, true);
+    public static final f L = new f(760, 0);
+    public static final h M = new h(1030, "34,103,107,110,115,133,136,141,147");
+    public static final f N = new f(1185, 8);
+    public static final d O = new d(962, false);
+    public static final d P = new d(969, true);
+    public static final d Q = new d(2304, true);
+    public static final d R = new d(970, true);
+    public static final h S = new h(416, "%1$s://%2$s/s");
+    public static final f T = new f(584, 1879044607);
+    public static final h U = new h(5, "en-US,en-GB,en-001,en-AU,en-CA,en-IN,en-NZ,en-ZA,fr-FR,it-IT,de-DE,es-ES");
+    public static final d V = new d(24, false);
+    public static final d W = new d(45620414, false);
+    public static final d X = new d(45619317, false);
+    public static final f Y = new f(17, 0);
+    public static final h Z = new h(156, "oauth2:https://www.googleapis.com/auth/googlenow");
+    public static final f aa = new f(995, 4);
+    public static final d ab = new d(326, false);
+    public static final f ac = new f(379, 10000);
+    public static final f ad = new f(197, 7);
+    public static final h ae = new h(191, "de-AT,de-DE,en-AU,en-CA,en-GB,en-IN,en-NZ,en-US,en-ZA,en-001,es-ES,es-MX,fr-CA,fr-FR,it-IT,ja-JP,ko-KR,pt-BR,ru-RU");
+    public static final h af = new h(230, ")]}'\n");
+    public static final h ag = new h(158, "Bearer ");
+    public static final h ah = new h(181, "/s");
+    public static final h ai = new h(157, "oauth2:https://www.googleapis.com/auth/googlenow");
+    public static final f aj = new f(2718, 86400000);
+    public static final f ak = new f(1049, 604800000);
+    public static final f al = new f(397, 4666);
+    public static final d am = new d(93, true);
+    public static final h an = new h(307, "voicesearch-web");
+    public static final h ao = new h(155, "oauth2:https://www.googleapis.com/auth/googlenow");
+}

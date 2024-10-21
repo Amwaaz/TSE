@@ -1,0 +1,271 @@
+
+
+m3en-US%1$s"Missed call
+
+m4en-US"IsAction:%1$s
+-
+m5en-US"IsAction:%1$s2Send text to %1$s
+
+m6en-US%1$s"Arrival time
+,
+m7en-USShare"IsAction:%1$s2	Share ETA
+)
+m8en-US%1$s"Weather at destination
+?
+m9en-USWeather"IsAction:%1$s2What's the weather in %1$s
+
+m3en%1$s"Missed call
+
+m4en"IsAction:%1$s
+*
+m5en"IsAction:%1$s2Send text to %1$s
+
+m6en%1$s"Arrival time
+)
+m7enShare"IsAction:%1$s2	Share ETA
+ 
+m3da%1$s"Ubesvaret opkald
+
+m4da"IsAction:%1$s
+*
+m5da"IsAction:%1$s2Send sms til %1$s
+ 
+m6da%1$s"Ankomsttidspunkt
+3
+m7daDel"IsAction:%1$s2Del forventet ankomst
+#
+m3de-DE%1$s"Verpasster Anruf
+
+m4de-DE"IsAction:%1$s
+.
+m5de-DE"IsAction:%1$s2SMS an %1$s senden
+
+m6de-DE%1$s"Ankunftszeit
+N
+m7de-DETeilen"IsAction:%1$s2*Meine voraussichtliche Ankunftszeit teilen
+ 
+m3de%1$s"Verpasster Anruf
+
+m4de"IsAction:%1$s
++
+m5de"IsAction:%1$s2SMS an %1$s senden
+
+m6de%1$s"Ankunftszeit
+K
+m7deTeilen"IsAction:%1$s2*Meine voraussichtliche Ankunftszeit teilen
+
+m3es%1$s"Llamada perdida
+
+m4es"IsAction:%1$s
+-
+m5es"IsAction:%1$s2Envía un SMS a %1$s
+
+m6es%1$s"Hora de llegada
+1
+m7es	Compartir"IsAction:%1$s2Compartir ETA
+ 
+m3fr-CA%1$s"Appel manqué
+
+m4fr-CA"IsAction:%1$s
+<
+m5fr-CA"IsAction:%1$s2 Envoyer le message texte à %1$s
+%
+m6fr-CA%1$s"Heure d’arrivée
+I
+m7fr-CAPartager"IsAction:%1$s2#Partager l'heure d'arrivée prévue
+ 
+m3fr-FR%1$s"Appel manqué
+
+m4fr-FR"IsAction:%1$s
+1
+m5fr-FR"IsAction:%1$s2Envoie un SMS à %1$s
+#
+m6fr-FR%1$s"Heure d'arrivée
+I
+m7fr-FRPartager"IsAction:%1$s2#Partager l'heure d'arrivée prévue
+
+m3fr%1$s"Appel manqué
+
+m4fr"IsAction:%1$s
+.
+m5fr"IsAction:%1$s2Envoie un SMS à %1$s
+ 
+m6fr%1$s"Heure d'arrivée
+F
+m7frPartager"IsAction:%1$s2#Partager l'heure d'arrivée prévue
+!
+m3it-IT%1$s"Chiamata persa
+
+m4it-IT"IsAction:%1$s
+/
+m5it-IT"IsAction:%1$s2Invia un SMS a %1$s
+ 
+m6it-IT%1$s"Ora di arrivo
+I
+m7it-IT	Condividi"IsAction:%1$s2"Condividi orario di arrivo stimato
+,
+m3hi-IN%1$s"मिस्ड कॉल
+
+m4hi-IN"IsAction:%1$s
+D
+m5hi-IN"IsAction:%1$s2(%1$s को मैसेज भेजो
+9
+m6hi-IN%1$s"&पहुँचने का समय
+Q
+m7hi-INशेयर करें"IsAction:%1$s2ETA शेयर करो
+)
+m3id-ID%1$s"Panggilan tak terjawab
+
+m4id-ID"IsAction:%1$s
+/
+m5id-ID"IsAction:%1$s2Kirim pesan ke %1$s
+
+m6id-ID%1$s"
+Waktu tiba
+0
+m7id-IDBagikan"IsAction:%1$s2Bagikan PWT
+
+m3ja-JP%1$s"不在着信
+
+m4ja-JP"IsAction:%1$s
+O
+m5ja-JP"IsAction:%1$s23%1$s さんにテキスト メッセージを送信
+
+m6ja-JP%1$s"到着時刻
+E
+m7ja-JP共有"IsAction:%1$s2!到着予定時刻を共有して
+ 
+m3ko%1$s"부재중 전화
+
+m4ko"IsAction:%1$s
+@
+m5ko"IsAction:%1$s2'%1$s 한테 문자 메시지 보내 줘
+
+m6ko%1$s"도착 시간
+<
+m7ko공유"IsAction:%1$s2도착 예정 시간 공유
+
+m3nb%1$s"
+Tapt anrop
+
+m4nb"IsAction:%1$s
+1
+m5nb"IsAction:%1$s2Send en melding til %1$s
+
+m6nb%1$s"
+Ankomsttid
+6
+m7nbDel"IsAction:%1$s2Del forventet ankomsttid
+
+m3no%1$s"
+Tapt anrop
+
+m4no"IsAction:%1$s
+1
+m5no"IsAction:%1$s2Send en melding til %1$s
+
+m6no%1$s"
+Ankomsttid
+6
+m7noDel"IsAction:%1$s2Del forventet ankomsttid
+
+m3nl%1$s"Gemiste oproep
+
+m4nl"IsAction:%1$s
+0
+m5nl"IsAction:%1$s2Stuur een sms naar %1$s
+
+m6nl%1$s"Aankomsttijd
+>
+m7nlDelen"IsAction:%1$s2Deel je verwachte aankomsttijd
+(
+m3pl%1$s"Nieodebrane połączenie
+
+m4pl"IsAction:%1$s
+/
+m5pl"IsAction:%1$s2Wyślij SMS-a do: %1$s
+!
+m6pl%1$s"Godzina przyjazdu
+I
+m7plUdostępnij"IsAction:%1$s2#Udostępnij szacowany czas dotarcia
+"
+m3pt-BR%1$s"Chamada perdida
+
+m4pt-BR"IsAction:%1$s
+;
+m5pt-BR"IsAction:%1$s2Enviar mensagem texto para %1$s
+&
+m6pt-BR%1$s"Horário de chegada
+;
+m7pt-BRCompartilhar"IsAction:%1$s2Compartilhe o HEC
+ 
+m3pt-PT%1$s"Não atendida
+
+m4pt-PT"IsAction:%1$s
+A
+m5pt-PT"IsAction:%1$s2%Envia uma mensagem de texto para %1$s
+"
+m6pt-PT%1$s"Hora de chegada
+9
+m7pt-PT	Partilhar"IsAction:%1$s2Partilha a chegada
+(
+m3ru%1$s"Пропущ. вызов
+
+m4ru"IsAction:%1$s
+M
+m5ru"IsAction:%1$s24Отправить SMS пользователю %1$s
++
+m6ru%1$s"Время прибытия
+t
+m7ruПоделиться"IsAction:%1$s2EПоделись расчетным временем прибытия
+
+m3sv%1$s"Missat samtal
+
+m4sv"IsAction:%1$s
+-
+m5sv"IsAction:%1$s2Skicka sms till %1$s
+
+m6sv%1$s"
+Ankomsttid
+8
+m7svDela"IsAction:%1$s2Dela beräknad ankomsttid
+=
+m3th%1$s"-สายที่ไม่ได้รับ
+
+m4th"IsAction:%1$s
+E
+m5th"IsAction:%1$s2,ส่งข้อความถึง %1$s
+%
+m6th%1$s"เวลาถึง
+Z
+m7thแชร์"IsAction:%1$s23แชร์เวลาที่ฉันถึง
+
+m3tr%1$s"Cevapsız arama
+
+m4tr"IsAction:%1$s
+?
+m5tr"IsAction:%1$s2&%1$s adlı kişiye kısa mesaj gönder
+
+m6tr%1$s"Varış saati
+9
+m7trPaylaş"IsAction:%1$s2Varış saatimi paylaş
+"
+m3vi%1$s"Cuộc gọi nhỡ
+
+m4vi"IsAction:%1$s
+2
+m5vi"IsAction:%1$s2Gửi tin nhắn cho %1$s
+"
+m6vi%1$s"Thời gian đến
+L
+m7vi	Chia sẻ"IsAction:%1$s2(Chia sẻ thời gian đến dự kiến
+
+m3zh-TW%1$s"未接來電
+
+m4zh-TW"IsAction:%1$s
+/
+m5zh-TW"IsAction:%1$s2傳送訊息給%1$s
+
+m6zh-TW%1$s"抵達時間
+<
+m7zh-TW分享"IsAction:%1$s2分享預計到達時間

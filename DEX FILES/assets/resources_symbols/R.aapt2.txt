@@ -1,0 +1,3 @@
+int dimen product_banner_height 0
+int id web_container 0
+int layout main_view 0

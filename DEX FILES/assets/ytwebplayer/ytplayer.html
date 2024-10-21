@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html style="overflow: hidden; margin: 0; width: 100%; height: 100%; background-color: black;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body style="margin: 0; overflow: hidden; width: 100%; height: 100%;">
+    <div id="playerContainer" style="margin: 0;"></div>
+  </body>
+</html>
+
+<script>
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  var player;
+  var isPlayerInFullscreen = false;
+  var videoIdWaitingToAutoplayMuted = null;
+
+  const height = "100%";
+  const width = "100%";
+
+  function onYouTubeIframeAPIReady() {
+    postWebMessage({"event": "onYouTubeIframeAPIReady"})
+    startListeningToMessagesFromNative()
+  }
+
+  function onCreatePlayerRequest(messageBody) {
+    player = new YT.Player('playerContainer', {
+        height: height,
+        width: width,
+        playerVars: {
+          cc_load_policy: messageBody.cc_load_policy,
+          controls: messageBody.controls,
+          external_fullscreen: 1,
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange,
+          'onError': onError,
+          'onAutoplayBlocked': onAutoplayBlocked,
+          'onFullscreenToggled': onFullscreenToggled,
+        }
+    });
+  }
+
+  function onAutoplayBlocked(event) {
+    console.error("Autoplay blocked: " + JSON.stringify(event))
+    postWebMessage({"event" : "autoplayBlocked"})
+  }
+
+  function onFullscreenToggled(event) {
+    isPlayerInFullscreen = !isPlayerInFullscreen
+    player.setFauxFullscreen(isPlayerInFullscreen)
+
+    postWebMessage({
+      "event": "onFullscreenToggled",
+      "state": isPlayerInFullscreen ,
+    })
+  }
+
+  function onPlayerReady(event) {
+    postWebMessage({"event": "onPlayerReady"})
+  }
+
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.CUED &&
+        videoIdWaitingToAutoplayMuted != null &&
+        videoIdWaitingToAutoplayMuted == getCurrentVideoIdOrNull()) {
+      event.target.mutedAutoplay();
+      // Clear the pending muted autoplay cache.
+      videoIdWaitingToAutoplayMuted = null;
+    }
+    postWebMessage(
+      {
+        "event": "onStateChange",
+        "state": event.data,
+        "currentTime": event.target.getCurrentTime(),
+      }
+    )
+  }
+
+  function onError(event) {
+    postWebMessage(
+      {
+        "event": "onError",
+        "state": event.data,
+        "currentTime": event.target.getCurrentTime()
+      }
+    )
+  }
+
+  function onPlayRequest(messageBody) {
+    // A new play request invalidates a pending muted-autoplay request.
+    videoIdWaitingToAutoplayMuted = null;
+    if (messageBody.isMutedAutoplay) {
+      videoIdWaitingToAutoplayMuted = messageBody.videoId;
+      player.cueVideoById(messageBody.videoId, 0);
+    } else {
+      player.unMute();
+      player.loadVideoById(messageBody.videoId, messageBody.startTime)
+    }
+  }
+
+  function onStopRequested(messageBody) {
+    if (messageBody.videoId == getCurrentVideoIdOrNull()) {
+      player.pauseVideo();
+    }
+  }
+
+  function postWebMessage(messageObject) {
+    messageObject.videoId = getCurrentVideoIdOrNull()
+    try {
+      agsaVideoMessagingChannel.postMessage(JSON.stringify(messageObject));
+    } catch(error) {
+      console.error(error)
+    }
+  }
+
+  function onFullscreenRequest(messageBody) {
+    if (messageBody.videoId == getCurrentVideoIdOrNull()) {
+      let isFullscreen = messageBody.isFullscreen
+      player.setFauxFullscreen(isFullscreen)
+      isPlayerInFullscreen = isFullscreen
+    }
+  }
+
+  function startListeningToMessagesFromNative() {
+    agsaVideoMessagingChannel.onmessage = (msg) => {
+      let messageBody = JSON.parse(msg.data)
+      switch(messageBody.event) {
+        case 'setupPlayer':
+          onCreatePlayerRequest(messageBody);
+          break;
+        case 'play':
+          onPlayRequest(messageBody)
+          break;
+        case 'stop':
+          onStopRequested(messageBody);
+          break;
+        case 'setFullscreen':
+          onFullscreenRequest(messageBody);
+          break;
+      }
+    }
+  }
+
+  function getCurrentVideoIdOrNull() {
+    try {
+      return player.getVideoData().video_id;
+    } catch(error) {
+      return null;
+    }
+  }
+</script>

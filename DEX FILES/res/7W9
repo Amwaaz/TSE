@@ -1,0 +1,22 @@
+
+3
+$
+"(.* me a call.*)|(.*[C,c]all me.*)Call%fff?
+)
+
+(.*[R,r]uf mich an.*)Anrufen%fff?
+2
+!
+(.*[L,l]l[a,á]ma[me|da|dme].*)Llamar%fff?
+)
+
+(.*[A,a]ppelez-moi.*)Appeler%fff?
+%
+
+(.*[C,c]hiamami.*)Chiama%fff?
+"
+
+(.*전화해.*)통화%fff?
+T
+D
+B(.*[L,l]igue para mim.*)|(.*[L,l]iga para mim.*)|(.*[M,m]e liga.*)Ligar%fff?
